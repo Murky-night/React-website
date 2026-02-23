@@ -24,3 +24,8 @@
 .card .card-content {
     color: rgba(220, 20, 60, 0.649);
 }
+
+.student {
+    padding: 1rem;
+    border: 1px solid blueviolet;
+}
