@@ -6,6 +6,19 @@ import Student from "./Student.jsx";
 import UserGreeting from "./UserGreeting.jsx";
 
 function App() {
+  
+  const fruits =   [{id: 1, name: "Orange", price: 10},
+                    {id: 2, name: "Apple", price: 50},
+                    {id: 3, name: "Banana", price: 100},
+                    {id: 4, name: "Watermelon", price: 120},
+                    {id: 5, name: "Grape", price: 20}];
+
+  const drinks =   [{id: 6, name: "Pepsi", price: 30},
+                    {id: 7, name: "Sprite", price: 45},
+                    {id: 8, name: "Fanta", price: 65},
+                    {id: 9, name: "Coca cola", price: 80},
+                    {id: 10, name: "Dr Pepper", price: 25}];
+
   return(
     <>
       <Header> </Header>
@@ -14,7 +27,8 @@ function App() {
       <Student name="Nam" isStudent = {false}></Student>
       <Student name="Khang" age = {19} isStudent = {true}></Student> 
       <Card></Card>
-      <Food></Food>
+      <Food items = {fruits} category = "Fruits"></Food>
+      <Food items = {drinks} category = "Drinks"></Food>
       <Footer></Footer>
     </>
   );
