@@ -4,6 +4,7 @@ import Food from "./Food-list/Food.jsx";
 import Card from "./In4-card/Card.jsx";
 import Student from "./Student-list/Student.jsx";
 import UserGreeting from "./User-greeting/UserGreeting.jsx";
+import MyComponent from "./Use State hook/Use-state.jsx";
 
 function App() {
   
@@ -24,8 +25,7 @@ function App() {
       <Header> </Header>
       <UserGreeting username = "Nariyuki" isLoggedIn = {true}></UserGreeting>
       <Student></Student>
-      <Student name="Nam" isStudent = {false}></Student>
-      <Student name="Khang" age = {19} isStudent = {true}></Student> 
+      <MyComponent></MyComponent>
       <Card></Card>
       <Food items = {fruits} category = "Fruits"></Food>
       <Food items = {drinks} category = "Drinks"></Food>
