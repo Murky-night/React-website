@@ -1,0 +1,27 @@
+.card{
+    border: 1px solid rgba(120, 255, 105, 0.677);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.397);
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 270px;
+    display: block;
+    width: fit-content;
+}
+
+.cardPic {
+    max-width: 60%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.cardTitle {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    color:crimson;
+}
+
+.cardContent {
+    color: rgba(220, 20, 60, 0.649);
+}

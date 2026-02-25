@@ -1,9 +1,9 @@
 import Header from "./Header.jsx"
-import Footer from "./Footer.jsx";
-import Food from "./Food.jsx";
-import Card from "./Card.jsx";
-import Student from "./Student.jsx";
-import UserGreeting from "./UserGreeting.jsx";
+import Footer from "./Footer/Footer.jsx";
+import Food from "./Food-list/Food.jsx";
+import Card from "./In4-card/Card.jsx";
+import Student from "./Student-list/Student.jsx";
+import UserGreeting from "./User-greeting/UserGreeting.jsx";
 
 function App() {
   

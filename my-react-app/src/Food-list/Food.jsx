@@ -1,3 +1,5 @@
+import styles from "./Food.module.css"
+
 let Food = ({items = [], category = "Category"}) => {
 
     items.sort((a,b) => a.name.localeCompare(b.name)); //Alphabetical
@@ -19,8 +21,8 @@ let Food = ({items = [], category = "Category"}) => {
 
     return (<>  
                 {/* <ol>{cheapItems}</ol> */}
-                {items.length > 0 ? <h3 className="list-category">{category}</h3> : null}
-                {items.length > 0 ? <ol className="list-item">{listItems}</ol> : null}  
+                {items.length > 0 ? <h3 className= {styles.listCategory}>{category}</h3> : null}
+                {items.length > 0 ? <ol className= {styles.listItem}>{listItems}</ol> : null}  
             </>
     );
 }

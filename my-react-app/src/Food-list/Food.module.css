@@ -1,0 +1,15 @@
+.listCategory {
+    font-size: 2em;
+    margin: 10px;
+}
+
+.listItem li{
+    font-size: 1.2em;
+    margin-top: 0;
+    opacity: 50%;
+}
+
+.listItem li:hover {
+    opacity: 100%;
+    cursor: pointer;
+}

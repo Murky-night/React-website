@@ -1,0 +1,19 @@
+.welcomeMessage {
+    font-size: 2em;
+    background-color:chartreuse;
+    color:crimson;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+.loginInstruction {
+    font-size: 2em;
+    background-color:red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+    text-align: center;
+}
