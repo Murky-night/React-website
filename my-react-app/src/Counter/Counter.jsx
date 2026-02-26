@@ -1,18 +1,18 @@
-import styles from "./Use-state.module.css";
+import styles from "./Counter.module.css";
 import React, {useState} from "react";
 
-let MyComponent = () => {
+let Counter = () => {
 
     const [count,setCount] = useState(0);
 
-    const [name,setName] = useState("Guest")
-
     const incrementCount = () => {
-        setCount(count + 1);
+        setCount(c => c + 1);
+        setCount(c => c + 1);
     }
 
     const decrementCount = () => {
-        setCount(count - 1);
+        setCount(c => c - 1);
+        setCount(c => c - 1);
     }
 
     const resetCount = () => {
@@ -21,10 +21,12 @@ let MyComponent = () => {
 
     return (<div className={styles.counterContainer}> 
                 <p className={styles.counter}>{count}</p>
-                <button onClick={incrementCount} className= {styles.counterBtn}>Increment</button>
-                <button onClick={resetCount} className= {styles.counterBtn}>Reset</button>
+
                 <button onClick={decrementCount} className= {styles.counterBtn}>Decrement</button>
+                <button onClick={resetCount} className= {styles.counterBtn}>Reset</button>
+                <button onClick={incrementCount} className= {styles.counterBtn}>Increment</button>
+                
             </div>)
 }
 
-export default MyComponent
+export default Counter

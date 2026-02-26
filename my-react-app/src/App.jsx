@@ -4,7 +4,7 @@ import Food from "./Food-list/Food.jsx";
 import Card from "./In4-card/Card.jsx";
 import Student from "./Student-list/Student.jsx";
 import UserGreeting from "./User-greeting/UserGreeting.jsx";
-import MyComponent from "./Use State hook/Use-state.jsx";
+import Counter from "./Counter/Counter.jsx";
 import DeliveryDetails from "./Delivery details/Delivery.jsx";
 
 function App() {
@@ -25,12 +25,12 @@ function App() {
     <>
       <Header> </Header>
       <UserGreeting username = "Nariyuki" isLoggedIn = {true}></UserGreeting>
-      <DeliveryDetails></DeliveryDetails>
+      {/* <DeliveryDetails></DeliveryDetails> */}
       <Student></Student>
-      <MyComponent></MyComponent>
-      <Card></Card>
-      <Food items = {fruits} category = "Fruits"></Food>
-      <Food items = {drinks} category = "Drinks"></Food>
+      <Counter></Counter>
+      {/* <Card></Card> */}
+      {/* <Food items = {fruits} category = "Fruits"></Food> */}
+      {/* <Food items = {drinks} category = "Drinks"></Food> */}
       <Footer></Footer>
     </>
   );
