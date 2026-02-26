@@ -5,6 +5,7 @@ import Card from "./In4-card/Card.jsx";
 import Student from "./Student-list/Student.jsx";
 import UserGreeting from "./User-greeting/UserGreeting.jsx";
 import MyComponent from "./Use State hook/Use-state.jsx";
+import DeliveryDetails from "./Delivery details/Delivery.jsx";
 
 function App() {
   
@@ -24,6 +25,7 @@ function App() {
     <>
       <Header> </Header>
       <UserGreeting username = "Nariyuki" isLoggedIn = {true}></UserGreeting>
+      <DeliveryDetails></DeliveryDetails>
       <Student></Student>
       <MyComponent></MyComponent>
       <Card></Card>
