@@ -1,8 +1,11 @@
-🚀 My React Learning Journey:
+🚀 My React Learning Journey
+
 A collection of interactive, modern React components built while studying Information Technology. This repository showcases my progress from basic state management to advanced UI/UX interactions like drag-and-drop and smooth animations.
 
 ✨ Features
+
 📋 Interactive To-Do List
+
 Dynamic Tasks: Add and delete tasks with instant UI updates.
 
 Custom Drag-and-Drop: Reorder tasks by drag-and-drop feature
@@ -20,6 +23,7 @@ State Handling: Demonstrates useState and the Updater Function pattern to preven
 Complex Forms: Managed inputs for Names, Quantities, and delivery Instructions.
 
 🛠️ Tech Stack
+
 Framework: React (Vite)
 
 Styling: CSS Modules (Scoped styling)
@@ -27,6 +31,7 @@ Styling: CSS Modules (Scoped styling)
 Animation: AutoAnimate
 
 🚀 Getting Started
+
 1. Clone the repository:
 git clone https://github.com/Murky-night/React-website.git
 2. Navigate to the project folder:
@@ -37,6 +42,7 @@ npm install
 npm run dev
 
 💡 Key Learnings
+
 Component Architecture: Organizing code into logical folders like To-do-list and On-change.
 
 Event Handling: Mastering the difference between onChange and onDrag in the React ecosystem.
