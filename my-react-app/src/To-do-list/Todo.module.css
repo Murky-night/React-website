@@ -1,0 +1,132 @@
+.toDoList {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.toDoList h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+/* --- Input Area --- */
+.toDoList input[type="text"] {
+    width: 70%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.toDoList input[type="text"]:focus {
+    border-color: #6200ee;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.taskInput {
+    flex-grow: 1;
+    max-width: 350px;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.addBtn {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #6200ee;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.1s;
+    margin: 0; 
+}
+
+.addBtn:hover {
+    background-color: #5000c9;
+}
+
+.addBtn:active {
+    transform: scale(0.95);
+}
+
+/* --- The List & Tasks --- */
+.toDoList ol {
+    list-style-type: none; /* Removes the default numbers */
+    padding: 0;
+    margin-top: 25px;
+}
+
+.toDoList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: #f8f9fa;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.toDoList li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    background: #ffffff;
+}
+
+.task {
+    flex-grow: 1;
+    font-size: 1.1rem;
+    color: #444;
+    margin-right: 15px;
+    font-weight: 500;
+}
+.deleteBtn, .moveUpBtn, .moveDownBtn {
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-left: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.deleteBtn {
+    background-color: #ffe0e0;
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.deleteBtn:hover {
+    background-color: #ffcdd2;
+}
+
+.moveUpBtn, .moveDownBtn {
+    background-color: #e0f7fa;
+    color: #00838f;
+}
+
+.moveUpBtn:hover, .moveDownBtn:hover {
+    background-color: #b2ebf2;
+}

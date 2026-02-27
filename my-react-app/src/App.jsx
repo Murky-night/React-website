@@ -6,6 +6,7 @@ import Student from "./Student-list/Student.jsx";
 import UserGreeting from "./User-greeting/UserGreeting.jsx";
 import Counter from "./Counter/Counter.jsx";
 import DeliveryDetails from "./Delivery details/Delivery.jsx";
+import TodoApp from "./To-do-list/Todo.jsx";
 
 function App() {
   
@@ -25,6 +26,7 @@ function App() {
     <>
       <Header> </Header>
       <UserGreeting username = "Nariyuki" isLoggedIn = {true}></UserGreeting>
+      <TodoApp></TodoApp>
       {/* <DeliveryDetails></DeliveryDetails> */}
       <Student></Student>
       <Counter></Counter>
