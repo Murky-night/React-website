@@ -27,13 +27,13 @@ Styling: CSS Modules (Scoped styling)
 Animation: AutoAnimate
 
 🚀 Getting Started
-1. Clone the repository
+1. Clone the repository:
 git clone https://github.com/Murky-night/React-website.git
-2. Navigate to the project folder
+2. Navigate to the project folder:
 cd my-react-app
-3. Install dependencies
+3. Install dependencies:
 npm install
-4. Run the development server
+4. Run the development server:
 npm run dev
 
 💡 Key Learnings
