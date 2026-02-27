@@ -1,4 +1,4 @@
-import profilePicture from '../assets/what-chu-looking-at-birch.png';
+import profilePicture from '../assets/Profile-picture.png';
 import styles from "./Card.module.css";
 let Card = () => {
 
@@ -6,8 +6,8 @@ let Card = () => {
         <>
             <div className= {styles.card}>
                 <img className= {styles.cardPic} src={profilePicture} alt = "profile picture"></img>
-                <h2 className= {styles.cardTitle}>Nariyuki</h2>
-                <p className= {styles.cardContent}>I learn react & react native</p>
+                <h2 className= {styles.cardTitle}>Đăng Khôi</h2>
+                <p className= {styles.cardContent}>I learn front-end development</p>
             </div> 
         </>
     );

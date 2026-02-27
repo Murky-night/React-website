@@ -24,13 +24,13 @@ function App() {
 
   return(
     <>
-      <Header> </Header>
-      <UserGreeting username = "Nariyuki" isLoggedIn = {true}></UserGreeting>
+      {/* <Header> </Header> */}
+      {/* <UserGreeting username = "Khôi" isLoggedIn = {true}></UserGreeting> */}
+      <Card></Card>
       <TodoApp></TodoApp>
       {/* <DeliveryDetails></DeliveryDetails> */}
-      <Student></Student>
-      <Counter></Counter>
-      {/* <Card></Card> */}
+      {/* <Student></Student> */}
+      {/* <Counter></Counter> */}
       {/* <Food items = {fruits} category = "Fruits"></Food> */}
       {/* <Food items = {drinks} category = "Drinks"></Food> */}
       <Footer></Footer>
