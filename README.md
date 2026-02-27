@@ -1,4 +1,4 @@
-🚀 My React Learning Journey
+🚀 My React Learning Journey:
 A collection of interactive, modern React components built while studying Information Technology. This repository showcases my progress from basic state management to advanced UI/UX interactions like drag-and-drop and smooth animations.
 
 ✨ Features
