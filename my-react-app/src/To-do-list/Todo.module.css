@@ -104,10 +104,10 @@
 
 .editModeContainer {
     display: flex;
-    align-items: center;       /*Centers the input and buttons vertically*/
+    align-items: center;
     justify-content: space-between;
     width: 100%;               /* Ensures it takes up the full width of the li */
-    gap: 12px;                 /* Adds a nice space between the input and the buttons */
+    gap: 12px;                 
     flex-wrap: nowrap;         /* CRITICAL: Forbids the buttons from dropping to a new line */
 }
 
@@ -117,16 +117,15 @@
     padding: 10px 14px;        
     font-size: 16px;
     border: 2px solid #e0e0e0;
-    border-radius: 8px;        /* Smooth rounded corners to match your theme */
+    border-radius: 8px;
     outline: none;
     transition: border-color 0.2s ease-in-out;
 }
 
 .editInput:focus {
-    border-color: #5c00e6;     /* Matches your purple 'Add' button color */
+    border-color: #5c00e6; 
 }
 
-/* Container specifically for the Save and Cancel buttons */
 .editActionBtn {
     display: flex;    
     flex-shrink: 1;            /* CRITICAL: Prevents buttons from squishing when input gets long */
