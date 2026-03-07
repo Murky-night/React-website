@@ -15,7 +15,6 @@
     font-size: 2rem;
 }
 
-/* --- Input Area --- */
 .toDoList input[type="text"] {
     width: 70%;
     padding: 12px 15px;
@@ -40,7 +39,7 @@
 
 .taskInput {
     flex-grow: 1;
-    max-width: 350px;
+    max-width: 200px;
     padding: 12px 15px;
     font-size: 16px;
     border: 2px solid #e1e1e1;
@@ -102,7 +101,7 @@
     margin-right: 15px;
     font-weight: 500;
 }
-.deleteBtn, .moveUpBtn, .moveDownBtn {
+.deleteBtn, .editBtn, .saveBtn, .cancelBtn, .moveUpBtn, .moveDownBtn {
     border: none;
     border-radius: 6px;
     padding: 8px 12px;
@@ -119,6 +118,36 @@
 }
 
 .deleteBtn:hover {
+    background-color: #ffcdd2;
+}
+
+.editBtn {
+    background-color: #6200ee;
+    color: white;
+    font-weight: bold;
+}
+
+.editBtn:hover {
+    background-color: #5000c9;
+}
+
+.saveBtn {
+    background-color: #2ecc71;
+    color: white;
+    font-weight: bold;
+}
+
+.saveBtn:hover {
+    background-color: #27ae60;
+}
+
+.cancelBtn {
+    background-color: #ffe0e0;
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.cancelBtn:hover {
     background-color: #ffcdd2;
 }
 
