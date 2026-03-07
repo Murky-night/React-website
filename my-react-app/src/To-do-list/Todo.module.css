@@ -101,6 +101,38 @@
     margin-right: 15px;
     font-weight: 500;
 }
+
+.editModeContainer {
+    display: flex;
+    align-items: center;       /*Centers the input and buttons vertically*/
+    justify-content: space-between;
+    width: 100%;               /* Ensures it takes up the full width of the li */
+    gap: 12px;                 /* Adds a nice space between the input and the buttons */
+    flex-wrap: nowrap;         /* CRITICAL: Forbids the buttons from dropping to a new line */
+}
+
+.editInput {
+    flex-grow: 1;              /* Tells the input to stretch and take up remaining space */
+    min-width: 0;              /* CRITICAL HACK: Prevents the input from pushing buttons off the edge */
+    padding: 10px 14px;        
+    font-size: 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;        /* Smooth rounded corners to match your theme */
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.editInput:focus {
+    border-color: #5c00e6;     /* Matches your purple 'Add' button color */
+}
+
+/* Container specifically for the Save and Cancel buttons */
+.editActionBtn {
+    display: flex;
+    gap: 8px;                  /* Space between Save and Cancel */
+    flex-shrink: 1;            /* CRITICAL: Prevents buttons from squishing when input gets long */
+}
+
 .deleteBtn, .editBtn, .saveBtn, .cancelBtn, .moveUpBtn, .moveDownBtn {
     border: none;
     border-radius: 6px;

@@ -119,12 +119,14 @@ let TodoApp = () => {
                                     type="text"
                                     value={editTaskText}
                                     onChange={(e) => setEditTaskText(e.target.value)}
-                                    className={styles.taskInput}
+                                    className={styles.editInput}
                                     autoFocus
                                     onKeyDown={(e) => e.key === 'Enter' && saveEdit(index)}
                                 />
-                                <button className={styles.saveBtn} onClick={() => saveEdit(index)}>Save</button>
-                                <button className={styles.cancelBtn} onClick={cancelEditing}>Cancel</button>
+                                <div className={styles.editActionBtn}>
+                                    <button className={styles.saveBtn} onClick={() => saveEdit(index)}>Save</button>
+                                    <button className={styles.cancelBtn} onClick={cancelEditing}>Cancel</button>
+                                </div>
                             </div>
                         ) : (
                             // Default UI 
