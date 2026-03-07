@@ -128,8 +128,7 @@
 
 /* Container specifically for the Save and Cancel buttons */
 .editActionBtn {
-    display: flex;
-    gap: 8px;                  /* Space between Save and Cancel */
+    display: flex;    
     flex-shrink: 1;            /* CRITICAL: Prevents buttons from squishing when input gets long */
 }
 
