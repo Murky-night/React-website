@@ -1,5 +1,4 @@
-import React, { useState, useRef } from "react";
-import styles from "./Todo.module.css"
+import { useState, useRef } from "react";
 import { useAutoAnimate } from '@formkit/auto-animate/react'
 
 let TodoApp = () => {
@@ -21,7 +20,7 @@ let TodoApp = () => {
     };
 
     const [parent] = useAutoAnimate()
-    const [tasks, setTasks] = useState(["Prepare for assignment", "Go to the gym", "Check emails"]);
+    const [tasks, setTasks] = useState(["Go to the gym", "Eat breakfast", "Check emails", "Prepare for the interview", "Hang out with friends"]);
     const [newTask, setNewTask] = useState("");
     const [editIndex, setEditIndex] = useState(null);
     const [editTaskText, setEditTaskText] = useState(""); 
@@ -84,9 +83,9 @@ let TodoApp = () => {
     }
 
     return (
-        <div className="card bg-base-200 w-full max-w-md shadow-2xl mx-auto border border-base-300 card-body">
+        <div className="baseCard">
 
-             <h1 className="card-title text-3xl font-extrabold mb-6 justify-center">To do list</h1>
+             <h1 className="banner">To do list</h1>
 
             <div className="join w-full mb-8">
                 <input
@@ -94,7 +93,7 @@ let TodoApp = () => {
                     placeholder="Enter new task..."
                     value={newTask}
                     onChange={handleInputChange}
-                    className="input input-bordered join-item w-full focus:outline-none duration-400" 
+                    className="input input-bordered join-item w-full focus:outline-none focus:border-primary transition-all duration-300" 
                     onKeyDown={(e) => e.key === 'Enter' && addTask()}
                 />
                 <button 
@@ -117,16 +116,16 @@ let TodoApp = () => {
 
                         {editIndex === index ? (
                             // Edit UI
-                            <div className={styles.editModeContainer}>
+                            <div className="edit-UI">
                                 <input
                                     type="text"
                                     value={editTaskText}
                                     onChange={(e) => setEditTaskText(e.target.value)}
-                                    className={styles.editInput}
+                                    className="input input-bordered join-item w-full focus:outline-none focus:border-primary transition-all duration-300" 
                                     autoFocus
                                     onKeyDown={(e) => e.key === 'Enter' && saveEdit(index)}
                                 />
-                                <div className={styles.editActionBtn}>
+                                <div className="flex gap-1">
                                     <button className="btn btn-ghost btn-sm btn-success" onClick={() => saveEdit(index)}>Save</button>
                                     <button className="btn btn-ghost btn-sm btn-error" onClick={cancelEditing}>Cancel</button>
                                 </div>
@@ -134,7 +133,7 @@ let TodoApp = () => {
                         ) : (
                             // Default UI 
                             <>
-                                 <div className="flex justify-between items-center bg-base-100 p-4 rounded-2xl shadow-sm border border-base-300 hover:border-primary transition-colors">
+                                 <div className="default-UI">
                                     <span className="font-medium">{task}</span>
                                     <div className="flex gap-1">
                                         <button className="btn btn-ghost btn-sm btn-primary" onClick={() => editTask(index)}>Edit</button>
