@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import styles from "./Todo.module.css"
 import { useAutoAnimate } from '@formkit/auto-animate/react'
 
-let TodoApp = () => {
+let TodoApp2 = () => {
 
     const dragItem = useRef(null);
     const dragOverItem = useRef(null);
@@ -84,28 +84,25 @@ let TodoApp = () => {
     }
 
     return (
-        <div className="card bg-base-200 w-full max-w-md shadow-2xl mx-auto border border-base-300 card-body">
+        <div className={styles.toDoList}>
 
-             <h1 className="card-title text-3xl font-extrabold mb-6 justify-center">To do list</h1>
+            <h1>To do list</h1>
 
-            <div className="join w-full mb-8">
+            <div className={styles.inputContainer}>
                 <input
                     type="text"
                     placeholder="Enter new task..."
                     value={newTask}
                     onChange={handleInputChange}
-                    className="input input-bordered join-item w-full focus:outline-none duration-400" 
+                    className={styles.taskInput}
                     onKeyDown={(e) => e.key === 'Enter' && addTask()}
                 />
-                <button 
-                    className="btn btn-primary join-item" 
-                    onClick={addTask}
-                >
+                <button className={styles.addBtn} onClick={addTask}>
                     Add
                 </button>
             </div>
 
-            <ol ref={parent} className="space-y-4">
+            <ol ref={parent}>
                 {tasks.map((task, index) => (
                     <li
                         key={index}
@@ -127,29 +124,25 @@ let TodoApp = () => {
                                     onKeyDown={(e) => e.key === 'Enter' && saveEdit(index)}
                                 />
                                 <div className={styles.editActionBtn}>
-                                    <button className="btn btn-ghost btn-sm btn-success" onClick={() => saveEdit(index)}>Save</button>
-                                    <button className="btn btn-ghost btn-sm btn-error" onClick={cancelEditing}>Cancel</button>
+                                    <button className={styles.saveBtn} onClick={() => saveEdit(index)}>Save</button>
+                                    <button className={styles.cancelBtn} onClick={cancelEditing}>Cancel</button>
                                 </div>
                             </div>
                         ) : (
                             // Default UI 
                             <>
-                                 <div className="flex justify-between items-center bg-base-100 p-4 rounded-2xl shadow-sm border border-base-300 hover:border-primary transition-colors">
-                                    <span className="font-medium">{task}</span>
-                                    <div className="flex gap-1">
-                                        <button className="btn btn-ghost btn-sm btn-primary" onClick={() => editTask(index)}>Edit</button>
-                                        <button className="btn btn-ghost btn-sm btn-error" onClick={() => deleteTask(index)}>Delete</button>
-                                        {/* <button className={styles.moveUpBtn} onClick={() => moveTaskUp(index)}>👆</button>
-                                        <button className={styles.moveDownBtn} onClick={() => moveTaskDown(index)}>👇</button> */}
-                                    </div>
-                                 </div>
+                                <span className={styles.task}>{task}</span>
+                                <button className={styles.editBtn} onClick={() => editTask(index)}>Edit</button>
+                                <button className={styles.deleteBtn} onClick={() => deleteTask(index)}>Delete</button>
+                                {/* <button className={styles.moveUpBtn} onClick={() => moveTaskUp(index)}>👆</button>
+                                <button className={styles.moveDownBtn} onClick={() => moveTaskDown(index)}>👇</button> */}
                             </>
                         )}
                     </li>
                 ))}
-         </ol>
-    </div>
+            </ol>
+        </div>
     )
 }
 
-export default TodoApp
+export default TodoApp2

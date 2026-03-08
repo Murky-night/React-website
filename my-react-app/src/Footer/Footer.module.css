@@ -1,3 +1,18 @@
-.footer {
-    text-align: center;
+/* 1. Point to your main CSS file so Tailwind knows about your setup and DaisyUI */
+@reference "../index.css";
+
+/* 2. Plural "components" */
+@layer components {
+  
+  .appFooter {
+    /* 3. Use pure Tailwind and DaisyUI classes!
+      - footer & footer-center: DaisyUI classes for nice layout
+      - bg-base-200 & text-base-content: DaisyUI theme colors (Dark mode support!)
+      - p-10: Tailwind padding
+      - rounded-box: DaisyUI rounding
+      - mt-10: Tailwind margin-top
+    */
+    @apply footer footer-center bg-base-200 text-base-content p-10 mt-10 rounded-box shadow-xl;
+  }
+
 }
